@@ -1,7 +1,15 @@
 <template>
-  <Tutorial/>
+    <div>
+        <Nav/>
+        <Loading />
+    </div>
 </template>
 
 <script>
-export default {}
+import Loading from '@/components/Loading.vue';
+export default {
+    components: {
+        Loading,
+    }
+}
 </script>

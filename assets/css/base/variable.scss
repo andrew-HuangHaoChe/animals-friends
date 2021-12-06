@@ -1,0 +1,47 @@
+$rwd: (
+    mobile: 480px,
+    tablet: 768px,
+    medium: 1024px,
+    desktop: 1200px,
+    large: 1920px,
+);
+
+$container: (
+    mobile: (
+        width: 100%,
+        gutter: 0,
+        padding: 20px,
+        media: 0,
+    ),
+    tablet: (
+        width: 768px,
+        gutter: 0,
+        padding: 40px,
+        media: 768px,
+    ),
+    desktop: (
+        width: 1280px,
+        gutter: 16px,
+        padding: 40px,
+        media: 1200px,
+    ),
+    large: (
+        width: 1440px,
+        gutter: 20px,
+        padding: 40px,
+        media: 1920px,
+    ),
+);
+
+$header-height: (
+    normal: 70px,
+    tablet: 70px,
+    mobile: 55px,
+);
+
+$z-index: (
+    header: 100,
+    loading: 100000,
+    close-bg: 1000,
+    popup: 1001,
+);
