@@ -1,4 +1,15 @@
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES'
+  ? {
+      router: {
+        base: '/<repository-name>/'
+      }
+    }
+  : {}
 export default {
+  ...routerBase,
+  router: {
+    base: '/animals-friends/'
+  },
   server: {
     port: 8000, // default: 3000
     host: '0.0.0.0' // default: localhost

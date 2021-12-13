@@ -3,6 +3,8 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "build:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt build",
+    "generate:gh-pages": "cross-env DEPLOY_ENV=GH_PAGES nuxt generate",
     "dev": "cross-env NUXT_HOST=0.0.0.0 NUXT_PORT=3333 nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
@@ -22,7 +24,8 @@
     "@nuxtjs/pwa": "^3.3.5",
     "core-js": "^3.15.1",
     "cross-env": "^7.0.3",
-    "nuxt": "^2.15.7"
+    "nuxt": "^2.15.7",
+    "socket.io": "^4.4.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.14.7",
