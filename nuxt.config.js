@@ -30,11 +30,12 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
-    { src: '~/assets/style.scss', lang: 'scss' }
+    { src: '~/assets/style.scss', lang: 'scss' },
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '@/plugins/vue-awesome-swiper', mode: 'client' }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -68,6 +69,7 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    standalone: true,
     loaders: {
       sass: {
         implementation: require('sass'),
